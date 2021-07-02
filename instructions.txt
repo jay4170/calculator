@@ -1,8 +1,0 @@
--Create buttons with numbers, operators
-
-
-
--have buttons enter data into variables
-- have operator buttons call functions to work with those numbers
- - press 8 & 5 store in a & b. Function to add pressed and a&b used as variables
- - results printed on the screen

@@ -1,7 +1,7 @@
 let firstNum = ""; //string value of the numbers picked
 let secondNum = "";//string value of the numbers picked after operator
 let operator = "0"; //set up a listener to store which function to run
-var result = 23123123;
+var result = 0;
 
 
 
@@ -20,6 +20,7 @@ function display() {
         multiply(firstNum, secondNum)
     }
     if (operator == "divide") {
+
         div(firstNum, secondNum)
     }
 
@@ -89,7 +90,14 @@ const subtract = function (a, b) {
     result = Number(a) - Number(b);
 };
 const div = function (a, b) {
-    result = Number(a) / Number(b);
+    if (a == "0" || b == "0") {
+        result = "You Can't Divide by Zero Numpty";
+    } else {
+
+        result = Number(a) / Number(b);
+    }
+
+
 };
 
 const multiply = function (a, b) {
